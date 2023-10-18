@@ -4,11 +4,11 @@ INCLUDEPATH += $$PWD/alibabacloud/include
 
 
 win32 {
-    LIBS += -lalibabacloud-oss-cpp-sdk -L$$PWD/library/windows/alibabacloud/
-    LIBS += -lcurl -L$$PWD/library/windows/alibabacloud/
-    LIBS += -leay32 -L$$PWD/library/windows/alibabacloud/
-    LIBS += -lssleay32 -L$$PWD/library/windows/alibabacloud/
-    LIBS += -lzlibwapi -L$$PWD/library/windows/alibabacloud/
+    LIBS += -L$$PWD/library/windows/alibabacloud/ -lalibabacloud-oss-cpp-sdk
+    LIBS += -L$$PWD/library/windows/alibabacloud/ -lcurl
+    LIBS += -L$$PWD/library/windows/alibabacloud/ -leay32
+    LIBS += -L$$PWD/library/windows/alibabacloud/ -lssleay32
+    LIBS += -L$$PWD/library/windows/alibabacloud/ -lzlibwapi
 }
 unix {
     LIBS += -lalibabacloud-oss-cpp-sdk -L$$PWD/library/linux/alibabacloud/
